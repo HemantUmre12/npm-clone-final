@@ -237,6 +237,8 @@ header {
     border-radius: var(--radius);
     font-weight: bold;
     border-style: none;
+    cursor: pointer;
+    transition: var(--transition);
 }
 
 .button-container :nth-child(1) {
@@ -249,6 +251,11 @@ header {
     border: .2em solid var(--clr-white);
     background: transparent;
     box-shadow: var(--dark-shadow);
+}
+
+.button-container :hover {
+    background-color: white;
+    color: #FFC329;;
 }
 
 @media screen and (max-width: 670px) {
@@ -337,15 +344,15 @@ header {
     color: rgba(0, 0, 0, 0.7);
     font-family: var(--ff-primary);
     font-weight: lighter;
-    
 }
 
-.list-container > li{
+.list-container > a {
+    width: fit-content;
     cursor: pointer;
 }
 
-.list-container > li:hover{
-    opacity: .6;
+.list-container > a:hover {
+    color: black;
 }
 
 @media screen and (max-width: 970px) {
